@@ -2,5 +2,5 @@
     path = src/3rdparty
     url = ../qtwebengine-chromium.git
     ignore = dirty
-    branch = v5.12.3-2
+    branch = 5.12.3
     initrepo = true
