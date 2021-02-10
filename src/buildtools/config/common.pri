@@ -81,8 +81,9 @@ CONFIG(release, debug|release) {
 CONFIG(debug, debug|release) {
     gn_args += is_debug=true
     gn_args += use_debug_fission=false
-    # MSVC requires iterator debug to always match and Qt leaves it default on.
-    msvc: gn_args += enable_iterator_debugging=true
+    # MSVC requires iterator debug to always match.
+    # Houdini debug libraries are built without iterator debugging.
+    msvc: gn_args += enable_iterator_debugging=false
 
     # We also can not have optimized V8 binaries for MSVC as iterator debugging
     # would mismatch.
