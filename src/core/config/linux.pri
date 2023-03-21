@@ -36,7 +36,7 @@ qtConfig(webengine-embedded-build) {
     qtConfig(webengine-system-libxml2):  gn_args += use_system_libxml=true use_system_libxslt=true
     qtConfig(webengine-system-opus):     gn_args += use_system_opus=true
     qtConfig(webengine-system-snappy):   gn_args += use_system_snappy=true
-    qtConfig(webengine-system-libvpx):   gn_args += use_system_libvpx=true
+    qtConfig(webengine-system-libvpx):   gn_args += use_system_libvpx=false
     qtConfig(webengine-system-icu):      gn_args += use_system_icu=true icu_use_data_file=false
     qtConfig(webengine-system-ffmpeg):   gn_args += use_system_ffmpeg=true
     qtConfig(webengine-system-re2):      gn_args += use_system_re2=true
