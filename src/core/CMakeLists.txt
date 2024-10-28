@@ -74,6 +74,7 @@ foreach(arch ${archs})
                 QTWEBENGINECORE_VERSION_STR=${QT_REPO_MODULE_VERSION}
                 QTWEBENGINEPROCESS_NAME=${qtWebEngineProcessName}
                 BUILDING_CHROMIUM
+		_ITERATOR_DEBUG_LEVEL=0
                 "${forwardDeclarationMacro}"
             CXX_COMPILE_OPTIONS
                 ${gnCxxCompileOptions}
