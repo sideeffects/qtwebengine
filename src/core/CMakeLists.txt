@@ -545,6 +545,10 @@ foreach(arch ${archs})
                     )
                 endif()
             endif()
+            if(cpu MATCHES "arm.*")
+                # https://qt-project.atlassian.net/browse/QTBUG-129985
+                list(APPEND gnArgArg build_webnn_with_xnnpack=false)
+            endif()
             unset(cpu)
         endif()
 
